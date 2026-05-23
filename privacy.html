@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headcast - Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a1a1e; background: #fff; padding: 24px; max-width: 720px; margin: 0 auto; }
+        h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+        h2 { font-size: 20px; font-weight: 600; margin-top: 32px; margin-bottom: 12px; color: #7C6EF6; }
+        p, li { font-size: 15px; margin-bottom: 12px; color: #444; }
+        ul { padding-left: 20px; }
+        a { color: #7C6EF6; }
+        .date { font-size: 13px; color: #888; margin-bottom: 24px; }
+        .app-name { color: #7C6EF6; }
+        .note { background: #f5f3ff; border-left: 3px solid #7C6EF6; padding: 12px 16px; border-radius: 8px; margin-bottom: 16px; }
+        footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #eee; font-size: 13px; color: #888; }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy</h1>
+    <p class="date">Last updated: May 23, 2026</p>
+
+    <p><span class="app-name">Headcast</span> ("we", "our", "the app") is a migraine and headache tracking app developed by Mahmoud Shaaban. Your health information is sensitive, and protecting it is central to how the app is built. This policy explains what data the app handles, where it is stored, and your choices.</p>
+
+    <div class="note"><strong>The short version:</strong> Your migraine history lives on your device and in your own private iCloud account. We do not run a server that stores your health data, we have no account system, and we do not use any advertising or third-party tracking.</div>
+
+    <h2>1. Data You Provide</h2>
+    <ul>
+        <li>Migraine and headache entries (date, time, intensity, headache type, symptoms, triggers, and notes)</li>
+        <li>Medications and dose logs, including relief ratings</li>
+        <li>Onboarding answers (your first name, typical frequency, duration, and similar profile details)</li>
+        <li>Notification and tracking preferences</li>
+    </ul>
+
+    <h2>2. How Your Data Is Stored</h2>
+    <p><strong>On your device (default):</strong> All entries are stored locally using Apple's SwiftData framework, protected by iOS Data Protection (complete file protection).</p>
+    <p><strong>Private iCloud sync:</strong> Your data syncs across your own devices through Apple's CloudKit private database, tied to your Apple ID. This is an extension of your devices — it is encrypted and managed by Apple, and the developer has no access to it.</p>
+    <p>We do <strong>not</strong> operate a server that stores your migraine history, and there is no sign-up, email, or password.</p>
+
+    <h2>3. Apple Health (HealthKit)</h2>
+    <p>If you grant permission, the app reads health metrics — such as sleep, heart rate variability, heart rate, activity, and (optionally) menstrual cycle data — to help you spot patterns related to your migraines. With your permission it can also save headache events back to the Health app.</p>
+    <p>Health data is read and processed <strong>on your device</strong>. It is never sold, never used for advertising or marketing, and is not transmitted to our servers.</p>
+
+    <h2>4. Location &amp; Weather</h2>
+    <p>If you enable it, the app uses your approximate location to look up local weather and barometric pressure through Apple's WeatherKit, so it can help you correlate pressure changes with your migraines. Location is used for this lookup and is not stored on our servers.</p>
+
+    <h2>5. AI Insights (Optional)</h2>
+    <p>When you choose to run AI trigger analysis or a risk estimate, a minimized, de-identified summary of relevant entries (dates, intensity, triggers, symptoms, weather, and sleep values) is sent over an encrypted connection (TLS) to our secure processing function, hosted on Supabase (AWS infrastructure), which forwards it to <strong>Google Gemini</strong> for analysis.</p>
+    <ul>
+        <li>This summary does <strong>not</strong> include your name, contact details, or account identifiers.</li>
+        <li>The data is processed only to generate your insight and is not stored on our servers or used to train models.</li>
+        <li>A one-way hashed device identifier is used solely to enforce fair daily usage limits.</li>
+    </ul>
+
+    <h2>6. In-App Purchases</h2>
+    <p>Subscriptions are processed by <strong>Apple's App Store</strong> and managed through <strong>RevenueCat</strong>. We never receive your payment details. RevenueCat receives a pseudonymous app user ID to manage your subscription status. See <a href="https://www.revenuecat.com/privacy/">RevenueCat's Privacy Policy</a>.</p>
+
+    <h2>7. Analytics &amp; Tracking</h2>
+    <p>The app contains <strong>no third-party analytics, advertising, or cross-app tracking SDKs</strong>. We do not build advertising profiles and we do not sell your data.</p>
+
+    <h2>8. Third-Party Services</h2>
+    <ul>
+        <li><strong>Apple (iCloud, HealthKit, WeatherKit, StoreKit)</strong> — <a href="https://www.apple.com/privacy/">Privacy Policy</a></li>
+        <li><strong>Supabase (AI processing function)</strong> — <a href="https://supabase.com/privacy">Privacy Policy</a></li>
+        <li><strong>Google Gemini (AI analysis)</strong> — <a href="https://policies.google.com/privacy">Privacy Policy</a></li>
+        <li><strong>RevenueCat (subscriptions)</strong> — <a href="https://www.revenuecat.com/privacy/">Privacy Policy</a></li>
+    </ul>
+
+    <h2>9. Data Retention &amp; Your Rights</h2>
+    <p>Your data remains until you remove it. From <strong>Settings → Delete All Data</strong> you can permanently erase every entry from this device and from your private iCloud copy. You can also generate a doctor-ready PDF report of your data at any time. Deleting the app removes its local data.</p>
+
+    <h2>10. Children's Privacy</h2>
+    <p>Headcast is not directed at children under 13, and we do not knowingly collect data from children.</p>
+
+    <h2>11. Medical Disclaimer</h2>
+    <p>Headcast is a wellness and informational tool. It is <strong>not a medical device</strong> and does not diagnose, treat, cure, or prevent any condition. Always consult a qualified healthcare professional about your health.</p>
+
+    <h2>12. Changes to This Policy</h2>
+    <p>We may update this policy from time to time. The "Last updated" date above reflects the latest revision.</p>
+
+    <h2>13. Contact</h2>
+    <p>Questions about your privacy? Contact us at <a href="mailto:support@sheboftek.com">support@sheboftek.com</a>.</p>
+
+    <footer>© 2026 Mahmoud Shaaban · Headcast</footer>
+</body>
+</html>
